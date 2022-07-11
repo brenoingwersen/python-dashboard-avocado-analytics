@@ -20,6 +20,7 @@ external_stylesheets = [
 
 # Initialize the application
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 app.title = 'Avocado Analytics: Understand Your Avocados!'
 
 # define the layout property of your application. This property dictates the look of your app. In this case, you’ll use a heading with a description below it and two graphs.
